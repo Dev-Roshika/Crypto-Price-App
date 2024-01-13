@@ -1,1 +1,1 @@
-# crypto-price-app
+# Calculator
