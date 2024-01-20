@@ -13,6 +13,7 @@ export const ACTIONS = {
 const reducer = (state, {type, payload}) => {
   switch (type) {
     case ACTIONS.ADD_DIGIT:
+      if(payload.digit === '0' && state.currOp === '0' ) return state
       return {
         ...state,
         currOp: `${state.currOp || ''}${payload.digit}`
