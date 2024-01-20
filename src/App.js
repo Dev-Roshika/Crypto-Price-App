@@ -19,6 +19,8 @@ const reducer = (state, { type, payload }) => {
         ...state,
         currOp: `${state.currOp || ""}${payload.digit}`,
       };
+    case ACTIONS.CLEAR:
+      return {};
   }
 };
 function App() {
@@ -33,7 +35,7 @@ function App() {
         </div>
         <div className="curr-op">{currOp}</div>
       </div>
-      <button className="span-two">AC</button>
+      <button className="span-two" onClick={() => dispatch({type:ACTIONS.CLEAR})}>AC</button>
       <button>DEL</button>
       <OperationButton operation="÷" dispatch={dispatch} />
       <DigitButton digit="1" dispatch={dispatch} />
