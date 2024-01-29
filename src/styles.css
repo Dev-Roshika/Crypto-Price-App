@@ -48,6 +48,7 @@ body {
 
 .output .prev-op {
   color: rgba(255, 25, 255, 0.75);
+  font-size: 1.5rem;
 }
 
 .output .curr-op {
