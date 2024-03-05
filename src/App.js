@@ -121,14 +121,14 @@ function formatOperand(operand) {
 }
 
 function App() {
-  const [{ currOp, prevOp, Operation }, dispatch] = useReducer(reducer, {});
+  const [{ currOp, prevOp, operation }, dispatch] = useReducer(reducer, {});
 
   return (
     <div className="cal-grid">
       <div className="output">
         <div className="prev-op">
           {formatOperand(prevOp)}
-          {Operation}
+          { operation }
         </div>
         <div className="curr-op">{formatOperand(currOp)}</div>
       </div>

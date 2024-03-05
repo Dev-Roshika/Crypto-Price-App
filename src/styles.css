@@ -6,7 +6,8 @@
 
 body {
   margin: 0;
-  background: linear-gradient(to right, #00aaff, #00ff6c);
+  /* background: linear-gradient(to right, #0055ff, #d0ff00); */
+  background: -webkit-linear-gradient(to right, #0055ff, #d0ff00);
 }
 
 .cal-grid {
